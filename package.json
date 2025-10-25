@@ -1,0 +1,23 @@
+{
+  "name": "learn-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenchicong-catdang/learn-vite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenchicong-catdang/learn-vite/issues"
+  },
+  "homepage": "https://github.com/nguyenchicong-catdang/learn-vite#readme",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
