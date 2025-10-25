@@ -6,7 +6,8 @@ export default defineConfig({
   root: './vite',
   build: {
     emptyOutDir: true,
-    outDir: '../public',
+    //outDir: '../public',
+    outDir: resolve(__dirname, '../public') ,
     rollupOptions: {
       // Chỉ định các file HTML sẽ là điểm vào (entry points)
       input: {
