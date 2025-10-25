@@ -1,3 +1,9 @@
+# built document
+https://vite.dev/config/build-options.html
+## build.rollupOptions
+https://rollupjs.org/configuration-options/
+## bash
+```bash
 // vite/vite.config.js
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
@@ -22,3 +28,10 @@ export default defineConfig({
     },
   },
 })
+
+```
+
+## build.emptyOutDir xóa file cũ
+emptyOutDir: true,
+## build.outDir thư mục đầu ra
+outDir: '../public',
