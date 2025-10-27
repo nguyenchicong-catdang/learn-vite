@@ -1,19 +1,21 @@
 // vite/vite.config.js
 import { defineConfig } from 'vite';
-//import { resolve } from 'path';
+import { resolve } from 'path';
 import { fullPath } from '../fullPath';
+const tess = fullPath('abc');
+console.log(tess)
 export default defineConfig({
-  root: fullPath('vite'),
+  root: './vite',
   build: {
     emptyOutDir: true,
     //outDir: '../public',
-    outDir: fullPath('public'),
+    outDir: resolve(__dirname, '..', 'public') ,
     rollupOptions: {
       // Chỉ định các file HTML sẽ là điểm vào (entry points)
       input: {
         // Tên điểm vào (có thể đặt tùy ý, ví dụ: 'main', 'gioi-thieu', 'admin-dashboard')
-        main: fullPath('vite/index.html'),
-        post: fullPath('vite/post/index.html'),
+        main: resolve(__dirname, 'index.html'),
+        post: resolve(__dirname, 'post', 'index.html'),
         // Đối với thư mục con, bạn vẫn dùng hàm resolve
         //dashboard: resolve(__dirname, 'admin/dashboard.html'),
       },
