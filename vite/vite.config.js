@@ -2,6 +2,8 @@
 import { defineConfig } from 'vite';
 //import { resolve } from 'path';
 import { fullPath } from '../fullPath';
+import { vitePluginHtmlTransform } from './plugin-handler/vite-plugin-html-transform';
+import { vitePluginInclude } from './plugin-handler/vite-plugin-include';
 export default defineConfig({
   root: fullPath('vite'),
   build: {
@@ -22,4 +24,8 @@ export default defineConfig({
       // }
     },
   },
+  plugins: [
+    vitePluginHtmlTransform(),
+    vitePluginInclude()
+  ]
 })
