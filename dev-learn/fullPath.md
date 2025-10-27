@@ -1,18 +1,21 @@
-# vite config js
-vite --config vite/vite.config.js
-## v1 "dev": "vite"
-// vite/vite.config.js 
+## fullPaht dùng lam root dự án
+fullPath(string)
+## code
+```bash
+// fullPath.js
+// https://nodejs.org/docs/latest/api/url.html#urlfileurltopathurl-options
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+function fullPath(path = '') {
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
+    const __fullPath = resolve(__dirname, `${path}`);
+    return __fullPath;
+}
 
-import { defineConfig } from 'vite'
-
-export default defineConfig({ root: './vite' });
-
-## package.json
-"dev": "vite --config ./vite/vite.config.js",
-
-# vite.config.js v2
-xem thêm [text](../dev-learn/fullPath.md)
-
+export {fullPath}
+```
+## sử dụng trong vite.config.js
 ```bash
 // vite/vite.config.js
 import { defineConfig } from 'vite';
