@@ -3,7 +3,7 @@
 // https://nodejs.org/docs/latest/api/fs.html#filehandlereadfileoptions
 // fsPromises.readFile(path[, options]);
 import { readFile } from 'node:fs/promises';
-import { fullPath } from '../../fullPath';
+import { fullPath } from '../../../fullPath';
 function vitePluginInclude() {
     return {
         name: "vite-plugin-include",
