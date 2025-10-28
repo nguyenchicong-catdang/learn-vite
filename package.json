@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nguyenchicong-catdang/learn-vite#readme",
   "devDependencies": {
+    "sass-embedded": "^1.93.2",
     "vite": "^7.1.12"
   }
 }
