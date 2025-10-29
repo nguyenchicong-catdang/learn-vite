@@ -30,10 +30,7 @@ async function resolveIncludes(html) {
                 return { match, content };
             } catch (error) {
                 console.error(`Error reading ${src}: ${error}`);
-                // bị vòng lặt vô hạn
-                // return { match, content: match };
-                // fix vòng lặt vô hạn nếu src không đúng
-                return { match, content: '' };
+                return { match, content: match };
             }
         })
     );
