@@ -1,0 +1,21 @@
+// vite/template/header/nav/_header-nav.scss
+@use '../../scss/variables' as var;
+$color-test: red;
+@mixin header-nav-styles {
+    nav {
+        ul {
+            li {
+                list-style-type: none;
+                background-color: var.$nav-background-color;
+            }
+        }
+    }
+}
+
+nav.a {
+    li {
+        a {
+            text-decoration: none;
+        }
+    }
+}

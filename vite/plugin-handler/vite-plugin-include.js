@@ -31,6 +31,8 @@ async function resolveIncludes(html) {
             } catch (error) {
                 console.error(`Error reading ${src}: ${error}`);
                 return { match, content: match };
+                // vòng lặp vô hạn
+                // return { match, content: '' };
             }
         })
     );

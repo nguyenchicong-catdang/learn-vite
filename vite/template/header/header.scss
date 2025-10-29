@@ -1,3 +1,6 @@
+//@forward 'nav/header-nav';
+@use 'nav/header-nav' as nav;
 header {
     color: red;
+    @include nav.header-nav-styles;
 }
