@@ -9,5 +9,13 @@ export default defineConfig({
     vite_include_html_plugin(),
     // @param: string []
     vite_plugin_rewrite_all(['post'])
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      input: {
+        index: 'vite/index.html',
+        post: 'vite/post/index.html'
+      }
+    }
+  }
 })
