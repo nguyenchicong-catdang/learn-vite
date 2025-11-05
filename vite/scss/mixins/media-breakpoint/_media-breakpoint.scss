@@ -1,0 +1,15 @@
+// vite/scss/mixins/media-breakpoint/_media-breakpoint.scss
+@use 'sass:map';
+@use '../../variables/variables' as *;
+@mixin media-breakpoint-up($breakpoint-name) {
+    // Lấy giá trị pixel từ map $breakpoints
+    $breakpoint-value: map.get($breakpoints, $breakpoint-name);
+    // Kiểm tra nếu breakpoint tồn tại
+    @if $breakpoint-value {
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+    } @else {
+        @error "Breakpoint '#{$breakpoint-name}' không tồn tại trong map $breakpoints.";
+    }
+}
