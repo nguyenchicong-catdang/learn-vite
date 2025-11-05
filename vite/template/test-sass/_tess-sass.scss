@@ -1,0 +1,17 @@
+// vite/template/test-sass/_tess-sass.scss
+@use '../../scss/scss';
+.test-sass {
+    color: red;
+    @include scss.media-breakpoint-up(sm) {
+        background-color: green;
+    }
+    // @include scss.media-breakpoint-up(md) {
+    //     background-color: rgb(231, 36, 36);
+    // }
+    // @include scss.media-breakpoint-up(lg) {
+    //     background-color: rgb(166, 216, 28);
+    // }
+    // @include scss.media-breakpoint-up(xl) {
+    //     background-color: rgb(66, 6, 231);
+    // }
+}

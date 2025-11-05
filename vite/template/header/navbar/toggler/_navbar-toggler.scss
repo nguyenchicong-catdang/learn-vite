@@ -1,0 +1,11 @@
+// vite/template/header/navbar/toggler/_navbar-toggler.scss
+@mixin button_navbar-toggler() {
+    // margin: 0;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-toggler {
+    @include button_navbar-toggler();
+}
