@@ -1,0 +1,11 @@
+// vite/template/header/navbar/nav/item/_nav-item.scss
+
+@mixin nav-item($color) {
+    li.nav-item {
+        a {
+            color: $color;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

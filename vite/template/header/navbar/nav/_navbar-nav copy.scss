@@ -1,0 +1,10 @@
+// vite/template/header/navbar/nav/_navbar-nav.scss
+@use '../../../../custom' as *;
+//$header-navbar-color: null !default;
+@use './item/nav-item' as *;
+@mixin navbar-nav {
+    ul.navbar-nav {
+        list-style-type: none;
+        @include nav-item;
+    }
+}
