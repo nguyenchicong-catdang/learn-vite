@@ -1,0 +1,23 @@
+// vite/template/header/navbar/nav/item/_nav-item.scss
+@use '../../../../custom' as *;
+$nav-item-color: white !default;
+$nav-item-color-hover: red !default;
+
+@mixin li_nav-item() {
+    margin-left: 10px;
+
+    a {
+        color: $nav-item-color;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+
+        &:hover {
+            color: $nav-item-color-hover;
+        }
+    }
+}
+
+.nav-item {
+    @include li_nav-item();
+}
