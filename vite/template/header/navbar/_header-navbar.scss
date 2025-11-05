@@ -1,0 +1,12 @@
+// vite/template/header/navbar/header-navbar.scss
+$header-navbar_background-color: #1232e7 !default;
+@use './nav/navbar-nav';
+
+@mixin nav_header-navbar() {
+    display: flex;
+    background-color: $header-navbar_background-color;
+}
+
+.header-navbar {
+    @include nav_header-navbar();
+}
