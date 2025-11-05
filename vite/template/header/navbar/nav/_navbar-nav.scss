@@ -1,0 +1,11 @@
+// vite/template/header/navbar/nav/_navbar-nav.scss
+@use './item/nav-item';
+
+@mixin ul_navbar-nav() {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-nav {
+    @include ul_navbar-nav();
+}
